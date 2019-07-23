@@ -23,8 +23,6 @@ namespace xadrez_console
                     try
                     {
                         Console.Clear();
-
-
                         Tela.imprimirPartida(partida);
                        
 
@@ -51,12 +49,14 @@ namespace xadrez_console
                         Console.ReadLine();
                     }
                 }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
+
             }
             catch (TabuleiroException e)
             {
                 Console.WriteLine(e.Message);
             }
-
             Console.ReadLine();
         }
     }
